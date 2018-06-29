@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+
+
+<!-- hardcoded css styling -->
+<style media="screen">
+.xrated{
+     border-radius: 35px;
+     border: 3px solid #d500f9;
+     padding: 20px;
+     width: 250px;
+     height: 220px;
+     font-size: .75em;
+     font-family: monospace;
+     text-align: center;
+     width:50%;
+ }
+</style>
+
+
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--4-col">
+    <!-- USD Exchange Rate  -->
+
+    <div class="xrated">
+      <h7>The Exchange Rate is:</h7>
+      <div class="currencies">
+        <h5>1 USD</h5> (U.S. Dollars)
+      </div>to:
+      <div class="currencies">
+        <h5>{{USRate}} DOP</h5> (Dominican Pesos)
+      </div>
+       <p></p>
+      <h7>As of: {{USDate}}</h7>
+    </div>
+  </div>
+
+
+<!-- EUR Exchange Rate -->
+  <div class="mdl-cell mdl-cell--4-col">
+    <!-- Slider  -->
+    <div class="xrated">
+      <h7>The Exchange Rate is:</h7>
+      <div class="currencies">
+        <h5>1 EUR</h5> (Euros)
+      </div>to:
+      <div class="currencies">
+        <h5>{{EurRate}} DOP</h5> (Dominican Pesos)
+      </div>
+       <p></p>
+      <h7>As of: {{EurDate}}</h7>
+    </div>
+  </div>
+  </div>
+
+
+
+
+  <div class="mdl-cell mdl-cell--2-col">
+    <!-- Slider2  -->
+  </div>
+
+
+
+
+
+
+
+
+{# Content Tabs - Game of Thrones #}
+<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+  <div class="mdl-tabs__tab-bar">
+      <a href="#starks-panel" class="mdl-tabs__tab is-active">Starks</a>
+      <a href="#lannisters-panel" class="mdl-tabs__tab">Lannisters</a>
+      <a href="#targaryens-panel" class="mdl-tabs__tab">Targaryens</a>
+  </div>
+
+  <div class="mdl-tabs__panel is-active" id="starks-panel">
+    <ul>
+
+      <li><i class="material-icons orange600 md-48">airport_shuttle</i></li>
+      <li><i class="material-icons md-light">all_inclusive</i></li>
+      <li><i class="material-icons">beach_access</i></li>
+      <li><i class="material-icons">casino</i></li>
+      <li><i class="material-icons">child_friendly</i></li>
+      <li><i class="material-icons">golf_course</i></li>
+      <li><i class="material-icons">pool</i></li>
+      <li><i class="material-icons">smoking_rooms</i></li>
+
+    </ul>
+  </div>
+  <div class="mdl-tabs__panel" id="lannisters-panel">
+    <ul>
+      <li>Tywin</li>
+      <li>Cersei</li>
+      <li>Jamie</li>
+      <li>Tyrion</li>
+    </ul>
+  </div>
+  <div class="mdl-tabs__panel" id="targaryens-panel">
+    <ul>
+      <li>Viserys</li>
+      <li>Daenerys</li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+  <div class="mdl-tabs__tab-bar">
+      <a href="#starks-panel" class="mdl-tabs__tab is-active">Starks</a>
+      <a href="#lannisters-panel" class="mdl-tabs__tab">Lannisters</a>
+      <a href="#targaryens-panel" class="mdl-tabs__tab">Targaryens</a>
+  </div>
+
+  <div class="mdl-tabs__panel is-active" id="starks-panel">
+    <ul>
+
+      <li><i class="material-icons orange600 md-48">airport_shuttle</i></li>
+      <li><i class="material-icons md-light">all_inclusive</i></li>
+      <li><i class="material-icons">beach_access</i></li>
+      <li><i class="material-icons">casino</i></li>
+      <li><i class="material-icons">child_friendly</i></li>
+      <li><i class="material-icons">golf_course</i></li>
+      <li><i class="material-icons">pool</i></li>
+      <li><i class="material-icons">smoking_rooms</i></li>
+
+    </ul>
+  </div>
+  <div class="mdl-tabs__panel" id="lannisters-panel">
+    <ul>
+      <li>Tywin</li>
+      <li>Cersei</li>
+      <li>Jamie</li>
+      <li>Tyrion</li>
+    </ul>
+  </div>
+  <div class="mdl-tabs__panel" id="targaryens-panel">
+    <ul>
+      <li>Viserys</li>
+      <li>Daenerys</li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+{% endblock %}

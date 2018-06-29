@@ -1,0 +1,22 @@
+
+/* CSS doesn't work for some reason */
+/* .material-icons.orange600 { color: #FB8C00; } */
+
+
+
+h7{
+  color:#e254ff;
+}
+
+.icon{
+  fill: lightgrey;
+}
+
+.icon:hover{
+  fill: #9C27B0;
+}
+
+
+.currencies{
+  color:#007ac1;
+}
